@@ -4,8 +4,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity FIFO is
     generic (
-        DATA_WIDTH : integer := 8;     -- Width of the data bus
-        DEPTH      : integer := 512    -- Depth of the FIFO (number of entries)
+        DATA_WIDTH : integer := 32;     -- Width of the data bus
+        DEPTH      : integer := 1024    -- Depth of the FIFO (number of entries)
     );
     port (
         clk        : in  std_logic;    -- Clock signal
